@@ -1,0 +1,142 @@
+RUNNING NOTES: 21 - MAR - 2024
+------------------------------------------------
+
+PREVIOUS TOPIC				-	OOPS
+CURRENT TOPIC				-	PACKAGE
+UPCOMING TOPIC				-	DATA ANALYSIS - PANDAS
+						
+--------------------------------------------------------------------------------------------------------
+
+INDEX
+---------
+0. DATA SCIENCE DEMO			-	Done
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+PYTHON PROGRAMMING LANGUAGE
+-------------------------------------------------------
+
+0. PYTHON - INSTALLATION			-	Done
+1. PYTHON - INTRODUCTION			-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - PROGRAM EXECUTION FLOW	-	Done
+5. PYTHON - NAMING CONVENTIONS		-	Done
+6. PYTHON - VARIABLES			-	Done
+7. PYTHON - DATA TYPES			-	Done
+8. PYTHON - OPERATORS			-	Done
+9. PYTHON - INPUT AND OUTPUT		-	Done
+10. PYTHON - FLOW CONTROL		-	Done
+11. PYTHON - STRING			-	Done
+12. PYTHON - FUNCTIONS - PART - 1		-	Done
+13. PYTHON - FUNCTIONS - PART - 2		-	Done
+14. PYTHON - MODULE			-	Done
+
+15. PYTHON - PACKAGE			-	Running topic
+
+16. PYTHON - LIST DATA STRUCTURE		-	Done
+17. PYTHON - TUPLE DATA STRUCTURE	-	Done
+18. PYTHON - SET DATA STRUCTURE		-	Done
+19. PYTHON - DICTIONARY DATA STRUCTURE	-	Done
+20. PYTHON - OOPS				-	Done
+
+
+--------------------------------------------------------------------------------------------------------
+
+Name of the Errors
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. IndexError
+
+6. TypeError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. RecurrsionError
+
+--------------------------------------------------------------------------------------------------------
+
+Name of the functions
+
+1. print(p)
+2. type(p)
+3. range(p)
+4. range(start, end)
+5. input(p)
+6. len(p)
+7. int(p)
+8. float(p)
+9. bool(p)
+
+--------------------------------------------------------------------------------------------------
+
+15. PYTHON - PACKAGE
+----------------------------------
+
+Module		->	Python program
+		->	demo1.py, demo2.py, demo3.py
+
+
+Package		->	A group of modules	->	directory/folder
+
+Programs		->	directory
+
+		->	demo1.py
+		->	demo2.py
+		->	demo3.py
+
+		->	__init__.py
+
+--------------------------------------------------------------------------------------------------
+
+Module		->	Python program	
+		->	variables, functions, classes
+
+Package		->	A group of modules with spl file(__init__.py)
+
+Library		->	A group of pakcages
+
+--------------------------------------------------------------------------------------------------
+
+1. Python		->	We done to move to Next Data Science Topic
+		->	few more topics(Exp handling, generator, deco..)
+
+--------------------------------------------------------------------------------------------------
+
+1. Python
+2. Data Analysis(using pandas == 21 topics)
+3. Data Analysis project(3 days)
+4. Data Visualization
+5. Maths(10 topics)
+6. Feature Engg
+7. Machine learning
+....
+--------------------------------------------------------------------------------------------------
+
+IMP topics in python
+---------------------------
+
+1. Flow control
+2. String
+3. Functions
+4. List, Tuple, Set, Dictionary
+5. OOPS
+
+--------------------------------------------------------------------------------------------------
+
+Student.... 8:18 PM
+
+how you(Trainer) will come to know we are doing practise?
+
+If you want job then do practice :)
+--------------------------------------------------------------------------------------------------	
+
+Daily
+--------
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+----------Session end-------------------------

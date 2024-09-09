@@ -1,0 +1,412 @@
+RUNNING NOTES: 04 - APR - 2024
+------------------------------------------------
+
+PREVIOUS TOPIC			-	PANDAS - DATAFRAME - ATTRIBUTES
+CURRENT TOPIC			-	PANDAS DATAFRAME - METHODS
+UPCOMING TOPIC			-	PANDAS - DATAFRAME - 
+					RENAMING COLUMN, INDEX
+						
+--------------------------------------------------------------------------------------------------------
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+PYTHON PROGRAMMING LANGUAGE
+-------------------------------------------------------
+
+0. PYTHON - INSTALLATION			-	Done
+1. PYTHON - INTRODUCTION			-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - PROGRAM EXECUTION FLOW	-	Done
+5. PYTHON - NAMING CONVENTIONS		-	Done
+6. PYTHON - VARIABLES			-	Done
+7. PYTHON - DATA TYPES			-	Done
+8. PYTHON - OPERATORS			-	Done
+9. PYTHON - INPUT AND OUTPUT		-	Done
+10. PYTHON - FLOW CONTROL		-	Done
+11. PYTHON - STRING			-	Done
+12. PYTHON - FUNCTIONS - PART - 1		-	Done
+13. PYTHON - FUNCTIONS - PART - 2		-	Done
+14. PYTHON - MODULE			-	Done
+15. PYTHON - PACKAGE			-	Done
+16. PYTHON - LIST DATA STRUCTURE		-	Done
+17. PYTHON - TUPLE DATA STRUCTURE	-	Done
+18. PYTHON - SET DATA STRUCTURE		-	Done
+19. PYTHON - DICTIONARY DATA STRUCTURE	-	Done
+20. PYTHON - OOPS				-	Done
+
+--------------------------------------------------------------------------------------------------------
+
+PANDAS
+------------
+
+
+1. PANDAS - INTRODUCTION			-	Done
+2. PANDAS - SERIES - INTRODUCTION		-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - MEHTODS		-	Done
+6. PANDAS - DATAFRAME - INTRODUCTION	-	Done
+
+7. PANDAS - DATAFRAME 			- 	Done
+	LOADING DIFFERENT FILES	
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Running topic
+
+10. PANDAS - DATAFRAME 			- 	Upcoming topic	
+	RENAMING COLUMN, INDEX
+
+--------------------------------------------------------------------------------------------------------
+
+Name of the Errors
+-------------------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. IndexError
+6. TypeError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. RecurrsionError
+
+--------------------------------------------------------------------------------------------------------
+
+Name of the functions
+
+1. print(p)
+2. type(p)
+3. range(p)
+4. range(start, end)
+5. input(p)
+6. len(p)
+7. int(p)
+8. float(p)
+9. bool(p)
+
+--------------------------------------------------------------------------------------------------
+
+9. PANDAS - DATAFRAME - METHODS		
+-----------------------------------------------------
+Realtime		->	companies having csv files
+		->	will give the file to Data Scientist
+		->	We need to load the file
+		->	DataFrame
+
+csv file		->	object == df	->	apply opes
+
+--------------------------------------------------------------------------------------------------
+
+Methods		string
+Methods		list
+Methods		tuple
+Methods		set
+Methods		dictionary
+Methods		Series
+Methods		DataFrame
+Methods		LinearRegression
+		Deep learning
+		future...
+
+--------------------------------------------------------------------------------------------------
+
+class
+
+	method1
+
+obj
+
+obj.method1()
+
+--------------------------------------------------------------------------------------------------
+
+df.head()		->	top 5 rows	Giving one result
+df.tail()		->	bottom 5 rows	Giving one result
+
+df.info()		->	df		
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+df.info()
+
+output
+---------
+
+<class 'pandas.core.frame.DataFrame'>
+
+RangeIndex: 600 entries, 0 to 599
+
+Data columns (total 4 columns):
+
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   Order ID       600 non-null    int64
+ 1   Customer Name  600 non-null    object
+ 2   Product        600 non-null    object
+ 3   Quantity       600 non-null    int64
+dtypes: int64(2), object(2)
+memory usage: 18.9+ KB
+
+--------------------------------------------------------------------------------------------------
+
+Methods
+
+	df.head()
+	df.tail()
+	df.info()
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.head(7))
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.tail(7))
+
+--------------------------------------------------------------------------------------------------
+
+Tell me some errors name
+
+SyntaxError
+NameError
+ValueError
+TypeError
+IndentationError
+IndexError
+AttributeError
+ModuleNotFoundError
+FileNotFoundError
+KeyError
+
+--------------------------------------------------------------------------------------------------
+
+	df.head()
+	df.tail()
+	df.info()
+	df.count()
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.describe())
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.describe().round(2))
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.nunique())
+
+--------------------------------------------------------------------------------------------------
+Accessing single column From DataFrame
+
+	(: 1000 dollars interview question :)
+
+--------------------------------------------------------------------------------------------------
+
+Accessing single/two column From DataFrame
+
+Accessing single column from DataFrame
+----------------------------------------------------------
+
+Syntax 1:			not recommended
+-------------			not using in realtime
+			why?
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+print(df.Product)
+
+Syntax 2:			Highly recommneded
+------------			We are using in realtime
+			Why?
+
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+print(df["Product"])
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+print(df.Product)		#	having single word
+print()
+print(df["Product"])		#	having single word
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+print(df.Customer Name)	#	having two words :(
+print()
+print(df["Customer Name"])	#	having two words :)
+
+--------------------------------------------------------------------------------------------------
+
+Accessing two column from the DataFrame
+------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+cols = ["Customer Name", "Product"]
+
+print()
+print(df[cols])
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+cols = ["Product", "Customer Name"]
+
+print()
+print(df[cols])
+
+--------------------------------------------------------------------------------------------------
+
+IMP info
+-----------
+
+While accessing the column from DataFrame, column should be match otherwise we will get KeyError
+
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+cols = ["Productkasdfkashdf", "Customer Name"]
+
+print()
+print(df[cols])
+
+--------------------------------------------------------------------------------------------------
+
+GANUGULA SINDHU PRIYA 7:54 PM		appreciate you boss :)
+
+Sir why it is not a attribute
+
+print(df)
+
+print(df.shape)		#	attribute			AttributError
+print(df.Product)		#	This is not an attribute
+				This is name of the column == KeyError
+
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+print()
+print(df[["Product", "Customer Name"]])
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+a = df["Quantity"]
+b = a.sum()
+
+print(b)
+
+--------------------------------------------------------------------------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+c = ["Product", "Customer Name", "Quantity", "Order ID"]
+
+print()
+print(df[c])
+
+--------------------------------------------------------------------------------------------------
+
+Google colab
+-------------------
+
+Programs
+	1. notepad + cmd
+	2. Google colab
+			Let me show how to write/run the examples
+			python
+			pandas
+			
+--------------------------------------------------------------------------------------------------
+
+Daily
+--------
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+----------Session end-------------------------
